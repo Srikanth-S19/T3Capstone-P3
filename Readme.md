@@ -65,10 +65,12 @@ Run Program "churn_model.ipynb"
 
 ### Output Data Files (Under "data" folder)
 
-| File Name      | Description                                                                                                                                                                            |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `model.pkl`    | Trained model, saved for Part 4                                                                                                                                                        |
-| `metrics.json` | file with <br/>a) key model metrics - accuracy, precision, recall, F1-score, ROC-AUC<br/>b) Confusion matrix values - at 0.5 (default) and threshold value<br/>c) Threshold value<br/> |
+| File Name                                                             | Description                                                                                                                                                                            |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `model.pkl`                                                           | Trained model, saved for Part 4                                                                                                                                                        |
+| `metrics.json`                                                        | file with <br/>a) key model metrics - accuracy, precision, recall, F1-score, ROC-AUC<br/>b) Confusion matrix values - at 0.5 (default) and threshold value<br/>c) Threshold value<br/> |
+| X_train_prepared.csv	<br/>X_test_prepared.csv	<br/>X_val_prepared.csv | Stored Train, Test and Validation data - generated on every run                                                                                                                        |
+| y_train_prepared.csv<br/>y_test_prepared.csv<br/>y_val_prepared.csv   | Stored Train, Test and Validation data - generated on every run                                                                                                                        |
 
 ### Output Images (Under "images" folder)
 
