@@ -63,7 +63,7 @@ Models were evaluated on an out-of-sample test set ($N = 336$ customer profiles)
 | **ROC-AUC**              | $0.8848$                           | **$0.8865$**                          | $0.8686$                                |
 
 ```
-  Receiver Operating Characteristic (ROC) Metrics Overview
+  ROC Metrics Overview
   ├── Random Forest   : [██████████████████████████████] AUC = 0.887
   ├── Logistic Reg.   : [████████████████████████████]   AUC = 0.885
   └── XGBoost Engine  : [██████████████████████████]     AUC = 0.869
@@ -71,7 +71,11 @@ Models were evaluated on an out-of-sample test set ($N = 336$ customer profiles)
 
 #### Selection Justification
 
-The **XGBoost Classifier** is designated as the production deployment framework because it achieves the highest overall **Recall ($80.36\%$)** and **F1-Score ($80.12\%$)**. It successfully flags the highest absolute surface area of at-risk users, preventing catastrophic retention slips. However, under high capital constraints, the **Random Forest** model can be substituted to capitalize on its superior **Precision ($82.24\%$)**, ensuring minimal incentive spend waste on false positives.
+The **XGBoost Classifier** achieves the highest overall **Recall ($80.36\%$)** and **F1-Score ($80.12\%$)**. It successfully flags the highest absolute surface area of at-risk users, preventing catastrophic retention slips. 
+
+But under budget constraints, **Random Forest** model can be used to capitalize on its superior **Precision ($82.24\%$)**, ensuring minimal incentive spend waste on false positives. 
+
+**Random Forest** is selected due to its focus on precision, ensuring minimum wasted spend.
 
 ### 6. Limitations
 
